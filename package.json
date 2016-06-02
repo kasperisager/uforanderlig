@@ -1,0 +1,48 @@
+{
+  "name": "uforanderlig",
+  "version": "0.0.0",
+  "description": "Simple and efficient JavaScript implementations of common immutable data structures",
+  "license": "MIT",
+  "repository": "kasperisager/uforanderlig",
+  "author": "Kasper Kronborg Isager <kasperisager@gmail.com>",
+  "scripts": {
+    "test": "xo && nyc ava",
+    "coverage": "nyc report --reporter=html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "transpile": "babel lib -d dist",
+    "prepublish": "npm run transpile"
+  },
+  "main": "dist/index.js",
+  "jsnext:main": "lib/index.js",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "keywords": [
+    "es6",
+    "modern",
+    "browser"
+  ],
+  "devDependencies": {
+    "ava": "^0.15.1",
+    "babel-cli": "^6.6.5",
+    "coveralls": "^2.11.8",
+    "nyc": "^6.1.1",
+    "xo": "^0.15.1"
+  },
+  "ava": {
+    "verbose": true,
+    "require": [
+      "babel-core/register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "exnext": true
+  }
+}
