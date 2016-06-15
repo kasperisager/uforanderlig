@@ -132,6 +132,43 @@ List.tail(l);
 
 Returns **List**
 
+### Map
+
+An immutable 2-3 tree map.
+
+```js
+import {Map} from 'uforanderlig';
+```
+
+#### empty
+
+Create an empty map.
+
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+#### get
+
+Get the value of a key in a map.
+
+**Parameters**
+
+-   `key` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **Any**
+
+#### set
+
+Set the value of a key in a map.
+
+**Parameters**
+
+-   `key` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))**
+-   `value` **Any**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **Any**
+
 ## License
 
 Copyright © 2016 [Kasper Kronborg Isager](https://github.com/kasperisager). Licensed under the terms of the [MIT license](LICENSE.md).
