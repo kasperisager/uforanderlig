@@ -167,7 +167,7 @@ Set the value of a key in a map.
 -   `value` **Any**
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **Any**
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 ## License
 
