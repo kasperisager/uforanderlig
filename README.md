@@ -38,6 +38,18 @@ An immutable forward linked list.
 import {List} from 'uforanderlig';
 ```
 
+#### empty
+
+Create an empty list.
+
+**Examples**
+
+```javascript
+const l = List.empty();
+```
+
+Returns **List**
+
 #### add
 
 Add an item to the front of a list.
@@ -53,18 +65,6 @@ Add an item to the front of a list.
 const l1 = List.empty();
 const l2 = List.add(1, l2);
 const l3 = List.add(2, l3);
-```
-
-Returns **List**
-
-#### empty
-
-Create an empty list.
-
-**Examples**
-
-```javascript
-const l = List.empty();
 ```
 
 Returns **List**
@@ -90,27 +90,6 @@ List.head(l);
 
 Returns **Any**
 
-#### size
-
-Get the size of a list.
-
-**Parameters**
-
--   `list` **List**
-
-**Examples**
-
-```javascript
-let l = List.empty();
-l = List.add(1, l);
-l = List.add(2, l);
-l = List.add(3, l);
-List.size(l);
-// => 3
-```
-
-Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
-
 #### tail
 
 Get the tail of a list.
@@ -131,6 +110,27 @@ List.tail(l);
 ```
 
 Returns **List**
+
+#### size
+
+Get the size of a list.
+
+**Parameters**
+
+-   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.size(l);
+// => 3
+```
+
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 ### Map
 
