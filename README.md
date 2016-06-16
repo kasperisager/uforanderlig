@@ -134,7 +134,8 @@ Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 ### Map
 
-An immutable 2-3 tree map.
+An immutable key/value map implemented as a 2-3 tree using path copying upon insertion. Since the map is implemented
+as a balanced search tree, keys must be comparable.
 
 ```js
 import {Map} from 'uforanderlig';
