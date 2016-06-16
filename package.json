@@ -1,7 +1,7 @@
 {
   "name": "uforanderlig",
   "version": "0.0.0",
-  "description": "Simple and efficient JavaScript implementations of common immutable data structures",
+  "description": "Simple and efficient JavaScript implementations of common persistent data structures",
   "license": "MIT",
   "repository": "kasperisager/uforanderlig",
   "author": "Kasper Kronborg Isager <kasperisager@gmail.com>",

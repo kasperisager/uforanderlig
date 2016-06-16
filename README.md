@@ -1,6 +1,6 @@
 # Uforanderlig
 
-> Simple and efficient JavaScript implementations of common immutable data structures
+> Simple and efficient JavaScript implementations of common persistent data structures
 
 ## Contents
 
