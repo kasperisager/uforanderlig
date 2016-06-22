@@ -283,6 +283,41 @@ Set the value of a key in a map.
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
+### Set
+
+A immutable set implemented on top of a key/value map. Since the set is implemented as a balanced search tree, keys
+must be comparable.
+
+```js
+import {Set} from 'uforanderlig';
+```
+
+#### add
+
+Add a key to a set.
+
+**Parameters**
+
+-   `key` **Any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+#### empty
+
+Create an empty set.
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+#### has
+
+Check if a key exists in a set.
+
+**Parameters**
+
+-   `key` **Any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
 ## License
 
 Copyright © 2016 [Kasper Kronborg Isager](https://github.com/kasperisager). Licensed under the terms of the [MIT license](LICENSE.md).
