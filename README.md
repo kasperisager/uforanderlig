@@ -30,25 +30,95 @@ list1 !== list2;
 
 ## API
 
-### List
+### Deque
 
-An immutable forward linked list.
+An immutable deque implemented as two forward-linked lists.
 
 ```js
-import {List} from 'uforanderlig';
+import {Deque} from 'uforanderlig';
 ```
 
 #### empty
 
-Create an empty list.
+Create an empty deque.
 
 **Examples**
 
 ```javascript
-const l = List.empty();
+const d = Deque.empty();
 ```
 
-Returns **List**
+Returns **Deque**
+
+#### first
+
+Get the first item of a deque.
+
+**Parameters**
+
+-   `deque` **Deque**
+
+Returns **Any**
+
+#### last
+
+Get the last item of a deque.
+
+**Parameters**
+
+-   `deque` **Deque**
+
+Returns **Any**
+
+#### pop
+
+Get a new deque with the last item removed.
+
+**Parameters**
+
+-   `deque` **Deque**
+
+Returns **Deque**
+
+#### push
+
+Add an item to the end of a deque.
+
+**Parameters**
+
+-   `item` **Any**
+-   `deque` **Deque**
+
+Returns **Deque**
+
+#### shift
+
+Get a new deque with the first item removed.
+
+**Parameters**
+
+-   `deque` **Deque**
+
+Returns **Deque**
+
+#### unshift
+
+Add an item to the front of a deque.
+
+**Parameters**
+
+-   `item` **Any**
+-   `deque` **Deque**
+
+Returns **Deque**
+
+### List
+
+An immutable forward-linked list.
+
+```js
+import {List} from 'uforanderlig';
+```
 
 #### add
 
@@ -65,6 +135,18 @@ Add an item to the front of a list.
 const l1 = List.empty();
 const l2 = List.add(1, l2);
 const l3 = List.add(2, l3);
+```
+
+Returns **List**
+
+#### empty
+
+Create an empty list.
+
+**Examples**
+
+```javascript
+const l = List.empty();
 ```
 
 Returns **List**
@@ -90,6 +172,37 @@ List.head(l);
 
 Returns **Any**
 
+#### isEmpty
+
+Check if a list is empty.
+
+**Parameters**
+
+-   `list` **List**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
+#### length
+
+Get the length of a list.
+
+**Parameters**
+
+-   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.length(l);
+// => 3
+```
+
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
+
 #### tail
 
 Get the tail of a list.
@@ -110,27 +223,6 @@ List.tail(l);
 ```
 
 Returns **List**
-
-#### size
-
-Get the size of a list.
-
-**Parameters**
-
--   `list` **List**
-
-**Examples**
-
-```javascript
-let l = List.empty();
-l = List.add(1, l);
-l = List.add(2, l);
-l = List.add(3, l);
-List.size(l);
-// => 3
-```
-
-Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 ### Map
 
@@ -157,6 +249,27 @@ Get the value of a key in a map.
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 Returns **Any**
+
+#### has
+
+Check if a key exists in a map.
+
+**Parameters**
+
+-   `key` **Any**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
+#### isEmpty
+
+Check if a map is empty.
+
+**Parameters**
+
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### set
 
