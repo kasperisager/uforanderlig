@@ -139,6 +139,15 @@ const l3 = List.add(2, l3);
 
 Returns **List**
 
+#### each
+
+Loop over the items of a list.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
 #### empty
 
 Create an empty list.
@@ -150,6 +159,18 @@ const l = List.empty();
 ```
 
 Returns **List**
+
+#### fold
+
+Fold over the items of a list.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `state` **Any**
+-   `list` **List**
+
+Returns **Any**
 
 #### head
 
@@ -182,6 +203,16 @@ Check if a list is empty.
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
+#### last
+
+Get the last item of a list.
+
+**Parameters**
+
+-   `list` **List**
+
+Returns **Any**
+
 #### length
 
 Get the length of a list.
@@ -202,6 +233,16 @@ List.length(l);
 ```
 
 Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
+
+#### reverse
+
+Reverse the items of a list.
+
+**Parameters**
+
+-   `list` **List**
+
+Returns **List**
 
 #### tail
 
