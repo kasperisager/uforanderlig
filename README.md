@@ -256,7 +256,19 @@ Get all entries of a map.
 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**
+Returns **List&lt;Tuple>**
+
+#### fold
+
+Fold over the entries of a map.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `state` **Any**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **Any**
 
 #### get
 
@@ -298,7 +310,7 @@ Get all keys of a map.
 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**
+Returns **List**
 
 #### set
 
@@ -312,6 +324,16 @@ Set the value of a key in a map.
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
+#### size
+
+Get the size of a map.
+
+**Parameters**
+
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
+
 #### values
 
 Get all values of a map.
@@ -320,7 +342,7 @@ Get all values of a map.
 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**
+Returns **List**
 
 ### Set
 
@@ -356,6 +378,35 @@ Check if a key exists in a set.
 -   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
+### Tuple
+
+An immutable tuple.
+
+```js
+import {Tuple} from 'uforanderlig';
+```
+
+#### at
+
+Get an element of a tuple.
+
+**Parameters**
+
+-   `index` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
+-   `tuple` **Tuple**
+
+Returns **Any**
+
+#### of
+
+Create a tuple of elements.
+
+**Parameters**
+
+-   `elements` **...Any**
+
+Returns **Tuple**
 
 ## License
 
