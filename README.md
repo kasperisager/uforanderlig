@@ -233,11 +233,30 @@ as a balanced search tree, keys must be comparable.
 import {Map} from 'uforanderlig';
 ```
 
+#### each
+
+Apply an iteratee to each entry of a map.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
 #### empty
 
 Create an empty map.
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+#### entries
+
+Get all entries of a map.
+
+**Parameters**
+
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**
 
 #### get
 
@@ -271,6 +290,16 @@ Check if a map is empty.
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
+#### keys
+
+Get all keys of a map.
+
+**Parameters**
+
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**
+
 #### set
 
 Set the value of a key in a map.
@@ -282,6 +311,16 @@ Set the value of a key in a map.
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+#### values
+
+Get all values of a map.
+
+**Parameters**
+
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)**
 
 ### Set
 
