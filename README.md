@@ -276,7 +276,7 @@ import {Map} from 'uforanderlig';
 
 #### each
 
-Apply an iteratee to each entry of a map.
+Loop over the entries of a map.
 
 **Parameters**
 
@@ -353,6 +353,17 @@ Get all keys of a map.
 
 Returns **List**
 
+#### map
+
+Map over the entries of a map.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
+
 #### set
 
 Set the value of a key in a map.
@@ -396,11 +407,20 @@ import {Set} from 'uforanderlig';
 
 #### add
 
-Add a key to a set.
+Add a value to a set.
 
 **Parameters**
 
--   `key` **Any**
+-   `value` **Any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+#### each
+
+Loop over the values of a set.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### empty
@@ -409,16 +429,69 @@ Create an empty set.
 
 Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-#### has
+#### fold
 
-Check if a key exists in a set.
+Fold over the values of a set.
 
 **Parameters**
 
--   `key` **Any**
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `state` **Any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+Returns **Any**
+
+#### has
+
+Check if a value exists in a set.
+
+**Parameters**
+
+-   `value` **Any**
 -   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
+#### isEmpty
+
+Check if a set is empty.
+
+**Parameters**
+
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
+#### map
+
+Map over the values of a set.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+#### size
+
+Get the size of a set.
+
+**Parameters**
+
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
+
+#### values
+
+Get the values of a set.
+
+**Parameters**
+
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+
+Returns **List**
 
 ### Tuple
 
