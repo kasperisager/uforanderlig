@@ -58,6 +58,17 @@ Get the first item of a deque.
 
 -   `deque` **Deque**
 
+**Examples**
+
+```javascript
+let d = Deque.empty();
+d = Deque.push(1, d);
+d = Deque.push(2, d);
+d = Deque.push(3, d);
+Deque.first(d);
+// => 1
+```
+
 Returns **Any**
 
 #### last
@@ -68,6 +79,17 @@ Get the last item of a deque.
 
 -   `deque` **Deque**
 
+**Examples**
+
+```javascript
+let d = Deque.empty();
+d = Deque.push(1, d);
+d = Deque.push(2, d);
+d = Deque.push(3, d);
+Deque.last(d);
+// => 3
+```
+
 Returns **Any**
 
 #### pop
@@ -77,6 +99,17 @@ Get a new deque with the last item removed.
 **Parameters**
 
 -   `deque` **Deque**
+
+**Examples**
+
+```javascript
+let d = Deque.empty();
+d = Deque.push(1, d);
+d = Deque.push(2, d);
+d = Deque.push(3, d);
+Deque.pop(d);
+// => Deque [ 1, 2 ]
+```
 
 Returns **Deque**
 
@@ -89,6 +122,16 @@ Add an item to the end of a deque.
 -   `item` **Any**
 -   `deque` **Deque**
 
+**Examples**
+
+```javascript
+let d = Deque.empty();
+d = Deque.push(1, d);
+d = Deque.push(2, d);
+d = Deque.push(3, d);
+// => Deque [ 1, 2, 3 ]
+```
+
 Returns **Deque**
 
 #### shift
@@ -98,6 +141,17 @@ Get a new deque with the first item removed.
 **Parameters**
 
 -   `deque` **Deque**
+
+**Examples**
+
+```javascript
+let d = Deque.empty();
+d = Deque.push(1, d);
+d = Deque.push(2, d);
+d = Deque.push(3, d);
+Deque.shift(d);
+// => Deque [ 2, 3 ]
+```
 
 Returns **Deque**
 
@@ -109,6 +163,16 @@ Add an item to the front of a deque.
 
 -   `item` **Any**
 -   `deque` **Deque**
+
+**Examples**
+
+```javascript
+let d = Deque.empty();
+d = Deque.unshift(1, d);
+d = Deque.unshift(2, d);
+d = Deque.unshify(3, d);
+// => Deque [ 3, 2, 1 ]
+```
 
 Returns **Deque**
 
@@ -148,6 +212,16 @@ Loop over the items of a list.
 -   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
 
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.each(console.log, l);
+```
+
 #### empty
 
 Create an empty list.
@@ -169,6 +243,17 @@ Fold over the items of a list.
 -   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `state` **Any**
 -   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.fold((s, i) => s + i, 0, l);
+// => 6
+```
 
 Returns **Any**
 
@@ -201,6 +286,17 @@ Check if a list is empty.
 
 -   `list` **List**
 
+**Examples**
+
+```javascript
+const l1 = List.empty();
+const l2 = List.add(1, l);
+List.isEmpty(l1);
+// => true
+List.isEmpty(l2);
+// => false
+```
+
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### last
@@ -210,6 +306,17 @@ Get the last item of a list.
 **Parameters**
 
 -   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.last(l);
+// => 1
+```
 
 Returns **Any**
 
@@ -243,6 +350,17 @@ Map over the items of a list.
 -   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
 
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.map(i => i * 2, l);
+// => List [ 2, 4, 6 ]
+```
+
 Returns **List**
 
 #### reduce
@@ -254,6 +372,17 @@ Reduce a list to a single value.
 -   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
 
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.reduce((s, i) => s + i, l);
+// => 6
+```
+
 Returns **Any**
 
 #### reverse
@@ -263,6 +392,17 @@ Reverse the items of a list.
 **Parameters**
 
 -   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.reverse(l);
+// => List [ 1, 2, 3 ]
+```
 
 Returns **List**
 
@@ -523,17 +663,6 @@ An immutable tuple.
 import {Tuple} from 'uforanderlig';
 ```
 
-#### at
-
-Get an element of a tuple.
-
-**Parameters**
-
--   `index` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
--   `tuple` **Tuple**
-
-Returns **Any**
-
 #### of
 
 Create a tuple of elements.
@@ -541,6 +670,14 @@ Create a tuple of elements.
 **Parameters**
 
 -   `elements` **...Any**
+
+**Examples**
+
+```javascript
+const t = Tuple.of('foo', 'bar');
+const [f, b] = t;
+// f = 'foo', b = 'bar'
+```
 
 Returns **Tuple**
 
