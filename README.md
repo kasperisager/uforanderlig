@@ -170,7 +170,7 @@ Add an item to the front of a deque.
 let d = Deque.empty();
 d = Deque.unshift(1, d);
 d = Deque.unshift(2, d);
-d = Deque.unshify(3, d);
+d = Deque.unshift(3, d);
 // => Deque [ 3, 2, 1 ]
 ```
 
