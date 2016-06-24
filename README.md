@@ -234,6 +234,28 @@ List.length(l);
 
 Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
+#### map
+
+Map over the items of a list.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
+Returns **List**
+
+#### reduce
+
+Reduce a list to a single value.
+
+**Parameters**
+
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
+Returns **Any**
+
 #### reverse
 
 Reverse the items of a list.
