@@ -234,6 +234,39 @@ const l = List.empty();
 
 Returns **List**
 
+#### every
+
+Check if every item of a list matches a predicate.
+
+**Parameters**
+
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
+
+#### filter
+
+Filter the items of a list.
+
+**Parameters**
+
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
+Returns **List**
+
+#### find
+
+Find the first item of a list that matches a predicate.
+
+**Parameters**
+
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
+Returns **Any**
+
 #### fold
 
 Fold over the items of a list.
@@ -405,6 +438,17 @@ List.reverse(l);
 ```
 
 Returns **List**
+
+#### some
+
+Check if some item of a list matches a predicate.
+
+**Parameters**
+
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **List**
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### tail
 
