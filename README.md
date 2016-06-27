@@ -243,6 +243,17 @@ Check if every item of a list matches a predicate.
 -   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
 
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.every(i => i < 4, l);
+// => true
+```
+
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### filter
@@ -254,6 +265,17 @@ Filter the items of a list.
 -   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
 
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.filter(i => i % 2 !== 0, l);
+// => List [ 3, 1 ]
+```
+
 Returns **List**
 
 #### find
@@ -264,6 +286,17 @@ Find the first item of a list that matches a predicate.
 
 -   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.find(i => i % 2 === 0, l);
+// => 2
+```
 
 Returns **Any**
 
@@ -447,6 +480,17 @@ Check if some item of a list matches a predicate.
 
 -   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 -   `list` **List**
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+List.some(i => i > 2, l);
+// => true
+```
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
