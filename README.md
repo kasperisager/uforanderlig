@@ -2,6 +2,8 @@
 
 > Simple and efficient JavaScript implementations of common persistent data structures
 
+Uforanderlig provides a collection of some common persistent data structures–namely lists, sets, maps, tuples, and deques–all implemented as trees using path-copying for persistence. The library has been written mostly as a means of educating myself on the inner workings of the persistent data structures employed in many functional programming languages.
+
 ## Contents
 
 -   [Installation](#installation)
