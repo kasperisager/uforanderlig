@@ -767,6 +767,17 @@ Add a value to a set.
 -   `value` **any** 
 -   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
 
+#### difference
+
+Get the difference of two sets.
+
+**Parameters**
+
+-   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+
 #### each
 
 Loop over the values of a set.
@@ -805,6 +816,17 @@ Check if a value exists in a set.
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
+#### intersect
+
+Get the intersection of two sets.
+
+**Parameters**
+
+-   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+
 #### isEmpty
 
 Check if a set is empty.
@@ -826,6 +848,28 @@ Map over the values of a set.
 
 Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
 
+#### partition
+
+Partition the values of a set to two separate sets.
+
+**Parameters**
+
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+
+**Examples**
+
+```javascript
+let s = Set.empty();
+s = Set.add(1, s);
+s = Set.add(2, s);
+s = Set.add(3, s);
+Set.partition(n => n % 2 === 0, l);
+// => (Set [ 2 ], Set [ 1, 3 ])
+```
+
+Returns **[Tuple](#tuple)** 
+
 #### size
 
 Get the size of a set.
@@ -835,6 +879,17 @@ Get the size of a set.
 -   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
 
 Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+
+#### union
+
+Get the union of two sets.
+
+**Parameters**
+
+-   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
 
 #### values
 
