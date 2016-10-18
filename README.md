@@ -695,6 +695,17 @@ Map over the entries of a map.
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
 
+#### partition
+
+Partition the entries of a map to two separate maps.
+
+**Parameters**
+
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+
+Returns **[Tuple](#tuple)** 
+
 #### set
 
 Set the value of a key in a map.
