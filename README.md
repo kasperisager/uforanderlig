@@ -391,6 +391,29 @@ List.isEmpty(l2);
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
+#### iterator
+
+Create an iterator for a list.
+
+**Parameters**
+
+-   `list` **[List](#list)** 
+
+**Examples**
+
+```javascript
+let l = List.empty();
+l = List.add(1, l);
+l = List.add(2, l);
+l = List.add(3, l);
+const i = List.iterator(l);
+i.next() // => 3
+i.next() // => 2
+i.next() // => 1
+```
+
+Returns **any** 
+
 #### last
 
 Get the last item of a list.
