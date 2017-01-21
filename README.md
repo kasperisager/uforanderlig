@@ -604,9 +604,24 @@ Loop over the entries of a map.
 -   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
 
+**Examples**
+
+```javascript
+let m = Map.empty();
+m = Map.set(1, 'foo', m);
+m = Map.set(2, 'bar', m);
+Map.each(console.log, m);
+```
+
 #### empty
 
 Create an empty map.
+
+**Examples**
+
+```javascript
+const m = Map.empty();
+```
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
 
@@ -617,6 +632,16 @@ Get all entries of a map.
 **Parameters**
 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+
+**Examples**
+
+```javascript
+let m = Map.empty();
+m = Map.set(1, 'foo', m);
+m = Map.set(2, 'bar', m);
+Map.entries(m);
+// => List [ (1, 'foo'), (2, 'bar') ]
+```
 
 Returns **[List](#list)&lt;[Tuple](#tuple)>** 
 
@@ -629,6 +654,17 @@ Check if a predicate returns truthy for all entries of a map.
 -   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
 
+**Examples**
+
+```javascript
+let m = Map.empty();
+m = Map.set(1, '1', m);
+m = Map.set(2, '2', m);
+m = Map.set(3, '3', m);
+Map.every((v, k) => parseInt(v) === k, m);
+// => true
+```
+
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 #### filter
@@ -639,6 +675,17 @@ Filter the entries of a map.
 
 -   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
 -   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+
+**Examples**
+
+```javascript
+let m = Map.empty();
+m = Map.set(1, '1', m);
+m = Map.set(2, '2', m);
+m = Map.set(3, '3', m);
+Map.filter((v, k) => k < 3, m);
+// => Map { 1: '1', 2: '2' }
+```
 
 Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
 
