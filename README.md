@@ -19,7 +19,7 @@ $ npm install --save uforanderlig
 
 ## Usage
 
-[<img src=https://tonicdev.com/favicon.ico width=25 align=top> __Try out Uforanderlig in your browser__](https://tonicdev.com/npm/uforanderlig)
+[<img src="https://www.npmjs.com/static/images/runkit.svg" width=24 align=top> __Try out Uforanderlig in your browser__](https://runkit.com/npm/uforanderlig)
 
 ```js
 import {List} from 'uforanderlig';
@@ -52,7 +52,7 @@ Create an empty deque.
 const d = Deque.empty();
 ```
 
-Returns **[Deque](#deque)** 
+Returns **[Deque](#deque)**
 
 #### first
 
@@ -60,7 +60,7 @@ Get the first item of a deque.
 
 **Parameters**
 
--   `deque` **[Deque](#deque)** 
+-   `deque` **[Deque](#deque)**
 
 **Examples**
 
@@ -73,7 +73,7 @@ Deque.first(d);
 // => 1
 ```
 
-Returns **any** 
+Returns **any**
 
 #### last
 
@@ -81,7 +81,7 @@ Get the last item of a deque.
 
 **Parameters**
 
--   `deque` **[Deque](#deque)** 
+-   `deque` **[Deque](#deque)**
 
 **Examples**
 
@@ -94,7 +94,7 @@ Deque.last(d);
 // => 3
 ```
 
-Returns **any** 
+Returns **any**
 
 #### pop
 
@@ -102,7 +102,7 @@ Get a new deque with the last item removed.
 
 **Parameters**
 
--   `deque` **[Deque](#deque)** 
+-   `deque` **[Deque](#deque)**
 
 **Examples**
 
@@ -115,7 +115,7 @@ Deque.pop(d);
 // => Deque [ 1, 2 ]
 ```
 
-Returns **[Deque](#deque)** 
+Returns **[Deque](#deque)**
 
 #### push
 
@@ -123,8 +123,8 @@ Add an item to the end of a deque.
 
 **Parameters**
 
--   `item` **any** 
--   `deque` **[Deque](#deque)** 
+-   `item` **any**
+-   `deque` **[Deque](#deque)**
 
 **Examples**
 
@@ -136,7 +136,7 @@ d = Deque.push(3, d);
 // => Deque [ 1, 2, 3 ]
 ```
 
-Returns **[Deque](#deque)** 
+Returns **[Deque](#deque)**
 
 #### shift
 
@@ -144,7 +144,7 @@ Get a new deque with the first item removed.
 
 **Parameters**
 
--   `deque` **[Deque](#deque)** 
+-   `deque` **[Deque](#deque)**
 
 **Examples**
 
@@ -157,7 +157,7 @@ Deque.shift(d);
 // => Deque [ 2, 3 ]
 ```
 
-Returns **[Deque](#deque)** 
+Returns **[Deque](#deque)**
 
 #### unshift
 
@@ -165,8 +165,8 @@ Add an item to the front of a deque.
 
 **Parameters**
 
--   `item` **any** 
--   `deque` **[Deque](#deque)** 
+-   `item` **any**
+-   `deque` **[Deque](#deque)**
 
 **Examples**
 
@@ -178,7 +178,7 @@ d = Deque.unshift(3, d);
 // => Deque [ 3, 2, 1 ]
 ```
 
-Returns **[Deque](#deque)** 
+Returns **[Deque](#deque)**
 
 ### List
 
@@ -194,8 +194,8 @@ Add an item to the front of a list.
 
 **Parameters**
 
--   `item` **any** 
--   `list` **[List](#list)** 
+-   `item` **any**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -205,7 +205,7 @@ const l2 = List.add(1, l2);
 const l3 = List.add(2, l3);
 ```
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 #### each
 
@@ -213,8 +213,8 @@ Loop over the items of a list.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -236,7 +236,7 @@ Create an empty list.
 const l = List.empty();
 ```
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 #### every
 
@@ -244,8 +244,8 @@ Check if every item of a list matches a predicate.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -258,7 +258,7 @@ List.every(i => i < 4, l);
 // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### filter
 
@@ -266,8 +266,8 @@ Filter the items of a list.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -280,7 +280,7 @@ List.filter(i => i % 2 !== 0, l);
 // => List [ 3, 1 ]
 ```
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 #### find
 
@@ -288,8 +288,8 @@ Find the first item of a list that matches a predicate.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -302,7 +302,7 @@ List.find(i => i % 2 === 0, l);
 // => 2
 ```
 
-Returns **any** 
+Returns **any**
 
 #### fold
 
@@ -310,9 +310,9 @@ Fold over the items of a list.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `state` **any** 
--   `list` **[List](#list)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `state` **any**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -325,7 +325,7 @@ List.fold((s, i) => s + i, 0, l);
 // => 6
 ```
 
-Returns **any** 
+Returns **any**
 
 #### head
 
@@ -333,7 +333,7 @@ Get the head of a list.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -346,7 +346,7 @@ List.head(l);
 // => 3
 ```
 
-Returns **any** 
+Returns **any**
 
 #### includes
 
@@ -354,8 +354,8 @@ Check if a list includes an item.
 
 **Parameters**
 
--   `item` **any** 
--   `list` **[List](#list)** 
+-   `item` **any**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -368,7 +368,7 @@ List.includes(2, l);
 // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### isEmpty
 
@@ -376,7 +376,7 @@ Check if a list is empty.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -389,7 +389,7 @@ List.isEmpty(l2);
 // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### iterator
 
@@ -397,7 +397,7 @@ Create an iterator for a list.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -412,7 +412,7 @@ i.next() // => 2
 i.next() // => 1
 ```
 
-Returns **any** 
+Returns **any**
 
 #### last
 
@@ -420,7 +420,7 @@ Get the last item of a list.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -433,7 +433,7 @@ List.last(l);
 // => 1
 ```
 
-Returns **any** 
+Returns **any**
 
 #### length
 
@@ -441,7 +441,7 @@ Get the length of a list.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -454,7 +454,7 @@ List.length(l);
 // => 3
 ```
 
-Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 #### map
 
@@ -462,8 +462,8 @@ Map over the items of a list.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -476,7 +476,7 @@ List.map(i => i * 2, l);
 // => List [ 2, 4, 6 ]
 ```
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 #### partition
 
@@ -484,8 +484,8 @@ Partition the items of a list to two separate lists.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -498,7 +498,7 @@ List.partition(n => n % 2 === 0, l);
 // => (List [ 2 ], List [ 1, 3 ])
 ```
 
-Returns **[Tuple](#tuple)** 
+Returns **[Tuple](#tuple)**
 
 #### reduce
 
@@ -506,8 +506,8 @@ Reduce a list to a single value.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -520,7 +520,7 @@ List.reduce((s, i) => s + i, l);
 // => 6
 ```
 
-Returns **any** 
+Returns **any**
 
 #### reverse
 
@@ -528,7 +528,7 @@ Reverse the items of a list.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -541,7 +541,7 @@ List.reverse(l);
 // => List [ 1, 2, 3 ]
 ```
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 #### some
 
@@ -549,8 +549,8 @@ Check if some item of a list matches a predicate.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `list` **[List](#list)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -563,7 +563,7 @@ List.some(i => i > 2, l);
 // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### tail
 
@@ -571,7 +571,7 @@ Get the tail of a list.
 
 **Parameters**
 
--   `list` **[List](#list)** 
+-   `list` **[List](#list)**
 
 **Examples**
 
@@ -584,7 +584,7 @@ List.tail(l);
 // => List [ 2, 1 ]
 ```
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 ### Map
 
@@ -601,8 +601,8 @@ Loop over the entries of a map.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 **Examples**
 
@@ -623,7 +623,7 @@ Create an empty map.
 const m = Map.empty();
 ```
 
-Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 #### entries
 
@@ -631,7 +631,7 @@ Get all entries of a map.
 
 **Parameters**
 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 **Examples**
 
@@ -643,7 +643,7 @@ Map.entries(m);
 // => List [ (1, 'foo'), (2, 'bar') ]
 ```
 
-Returns **[List](#list)&lt;[Tuple](#tuple)>** 
+Returns **[List](#list)&lt;[Tuple](#tuple)>**
 
 #### every
 
@@ -651,8 +651,8 @@ Check if a predicate returns truthy for all entries of a map.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 **Examples**
 
@@ -665,7 +665,7 @@ Map.every((v, k) => parseInt(v) === k, m);
 // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### filter
 
@@ -673,8 +673,8 @@ Filter the entries of a map.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 **Examples**
 
@@ -687,7 +687,7 @@ Map.filter((v, k) => k < 3, m);
 // => Map { 1: '1', 2: '2' }
 ```
 
-Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 #### find
 
@@ -695,10 +695,10 @@ Find the first entry of a map for which a predicate returns truthy.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **any** 
+Returns **any**
 
 #### fold
 
@@ -706,11 +706,11 @@ Fold over the entries of a map.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `state` **any** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `state` **any**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **any** 
+Returns **any**
 
 #### get
 
@@ -718,10 +718,10 @@ Get the value of a key in a map.
 
 **Parameters**
 
--   `key` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `key` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **any** 
+Returns **any**
 
 #### has
 
@@ -729,10 +729,10 @@ Check if a key exists in a map.
 
 **Parameters**
 
--   `key` **any** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `key` **any**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### isEmpty
 
@@ -740,9 +740,9 @@ Check if a map is empty.
 
 **Parameters**
 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### keys
 
@@ -750,9 +750,9 @@ Get all keys of a map.
 
 **Parameters**
 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 #### map
 
@@ -760,10 +760,10 @@ Map over the entries of a map.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 #### partition
 
@@ -771,10 +771,10 @@ Partition the entries of a map to two separate maps.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Tuple](#tuple)** 
+Returns **[Tuple](#tuple)**
 
 #### set
 
@@ -782,11 +782,11 @@ Set the value of a key in a map.
 
 **Parameters**
 
--   `key` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
--   `value` **any** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `key` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))**
+-   `value` **any**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+Returns **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
 #### size
 
@@ -794,9 +794,9 @@ Get the size of a map.
 
 **Parameters**
 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 #### some
 
@@ -804,10 +804,10 @@ Check if a predicate returns truthy for any entry of a map.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### values
 
@@ -815,9 +815,9 @@ Get all values of a map.
 
 **Parameters**
 
--   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)** 
+-   `map` **[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)**
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 ### Set
 
@@ -834,8 +834,8 @@ Add a value to a set.
 
 **Parameters**
 
--   `value` **any** 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `value` **any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### difference
 
@@ -843,10 +843,10 @@ Get the difference of two sets.
 
 **Parameters**
 
--   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
--   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+-   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### each
 
@@ -854,14 +854,14 @@ Loop over the values of a set.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### empty
 
 Create an empty set.
 
-Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### fold
 
@@ -869,11 +869,11 @@ Fold over the values of a set.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `state` **any** 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `state` **any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **any** 
+Returns **any**
 
 #### has
 
@@ -881,10 +881,10 @@ Check if a value exists in a set.
 
 **Parameters**
 
--   `value` **any** 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `value` **any**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### intersect
 
@@ -892,10 +892,10 @@ Get the intersection of two sets.
 
 **Parameters**
 
--   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
--   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+-   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### isEmpty
 
@@ -903,9 +903,9 @@ Check if a set is empty.
 
 **Parameters**
 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**
 
 #### map
 
@@ -913,10 +913,10 @@ Map over the values of a set.
 
 **Parameters**
 
--   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `iteratee` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### partition
 
@@ -924,8 +924,8 @@ Partition the values of a set to two separate sets.
 
 **Parameters**
 
--   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `predicate` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 **Examples**
 
@@ -938,7 +938,7 @@ Set.partition(n => n % 2 === 0, l);
 // => (Set [ 2 ], Set [ 1, 3 ])
 ```
 
-Returns **[Tuple](#tuple)** 
+Returns **[Tuple](#tuple)**
 
 #### size
 
@@ -946,9 +946,9 @@ Get the size of a set.
 
 **Parameters**
 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)**
 
 #### union
 
@@ -956,10 +956,10 @@ Get the union of two sets.
 
 **Parameters**
 
--   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
--   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `first` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
+-   `second` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
 #### values
 
@@ -967,9 +967,9 @@ Get the values of a set.
 
 **Parameters**
 
--   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)** 
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)**
 
-Returns **[List](#list)** 
+Returns **[List](#list)**
 
 ### Tuple
 
@@ -985,7 +985,7 @@ Create a tuple of elements.
 
 **Parameters**
 
--   `elements` **...any** 
+-   `elements` **...any**
 
 **Examples**
 
@@ -995,7 +995,7 @@ const [f, b] = t;
 // f = 'foo', b = 'bar'
 ```
 
-Returns **[Tuple](#tuple)** 
+Returns **[Tuple](#tuple)**
 
 ## License
 
